@@ -15,10 +15,9 @@ This is a simple weather app UI for iOS. It was built using **SwiftUI** as a lea
 
 ## Screenshots
 
-
 | Day Mode | Night Mode |
 |----------|------------|
-| <img src="https://github.com/user-attachments/assets/2db490b0-bf1f-4ee7-92ae-447f983d0a3b" alt="Day Mode" width="400" /> | <img src="https://github.com/user-attachments/assets/5413629e-e01a-48a0-88ae-27bf4bed4f38" alt="Night Mode" width="400" /> |
+| <img src="https://github.com/user-attachments/assets/52f2840b-683a-49ea-8935-ec83cf72fc31" alt="Day Mode" width="400" /> | <img src="https://github.com/user-attachments/assets/9cb61b9a-1055-40d5-acf4-059d983e58c8" alt="Night Mode" width="400" /> |
 
 
 ---
