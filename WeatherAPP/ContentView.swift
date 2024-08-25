@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct ContentView: View {
     
-    @State private var isNight = false;
     
+    @State private var isNight = false;
+
     var body: some View {
         ZStack{
           
@@ -50,15 +52,29 @@ struct ContentView: View {
                 Button{
                     isNight.toggle()
                 } label: {
-                    ChangeDayTimeButtonView(title: "Change Day / Night", textColor: .blue, backgroundColor: .white)
+                    ChangeDayTimeButtonView(title: "Change Day / Night", textColor: .cyan, isNight : isNight)
                 }
                 
                 Spacer()
         
             }
-            
+            .onAppear{
+                setNightModeBasedOnTime()
+            }
         }
     }
+    
+    private func setNightModeBasedOnTime() {
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: Date())
+        
+        if hour >= 20 {  // 8:00 PM or later
+            isNight = true
+        } else {
+            isNight = false
+        }
+    }
+    
 }
 
 #Preview {
