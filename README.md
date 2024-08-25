@@ -64,8 +64,3 @@ This is a simple weather app UI for iOS. It was built using **SwiftUI** as a lea
 
 ---
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
